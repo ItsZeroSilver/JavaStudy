@@ -2,7 +2,19 @@ package Chapter07;
 
 public class SmartPhoneExample {
     public static void main(String[] args) {
-        //SmartPhone 객체 생성
+        //추상 클래스는 new 연산자로 직접 생성할 수 없음
+        //Phone phone = new Phone("홍길동");
+        //phone.turnOn();
+        //phone.turnOff();
+
+        SmartPhone smartPhone = new SmartPhone("홍길동");
+        smartPhone.turnOn();
+        smartPhone.turnOff();
+        smartPhone.internetSerach();
+    }
+}
+//SmartPhone 객체 생성
+        /*
         SmartPhone myPhone = new SmartPhone("갤럭시", "은색");
 
         System.out.println("myPhone.model = " + myPhone.model);
@@ -17,5 +29,4 @@ public class SmartPhoneExample {
 
         myPhone.setWifi(true);
         myPhone.internet();
-    }
-}
+         */

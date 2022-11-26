@@ -4,6 +4,15 @@ package Chapter07;
 //상속은 부모가 자식을 선택해서 물려주지만, 프로그램에서는 자식이 부모를 선택한다.
 //자바는 다중 상속을 허용하지 않는다.
 public class SmartPhone extends Phone{
+    public SmartPhone(String owner) {
+        super(owner);
+    }
+
+    void internetSerach(){
+        System.out.println("인터넷 검색을 합니다.");
+    }
+}
+/*
     public boolean wifi;
 
     public SmartPhone(String model, String color){
@@ -21,4 +30,4 @@ public class SmartPhone extends Phone{
     public void internet(){
         System.out.println("인터넷을 연결합니다.");
     }
-}
+ */
