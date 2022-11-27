@@ -2,6 +2,10 @@ package Chapter07;
 
 public class ChildExample {
     public static void main(String[] args) {
+        Child child = new Child();
+    }
+}
+/*
         //자동 타입 변환
         Child parent = new Child();
         //부모 필드랑 메소드만 사용 가능
@@ -19,4 +23,4 @@ public class ChildExample {
         child.method3();
 
     }
-}
+ */
